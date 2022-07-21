@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
  * Copyright (c) 2017, 2020, Oracle and/or its affiliates. All rights reserved.
+=======
+ * Copyright (c) 2017, 2019, Oracle and/or its affiliates. All rights reserved.
+>>>>>>> dragonwell_official_upstream/master
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  *
  * This code is free software; you can redistribute it and/or modify it
@@ -22,13 +26,21 @@
  *
  */
 
+package gc.stress.gcold;
+
 /*
  * @test TestGCOldWithZ
- * @key gc
+ * @key gc randomness
+ * @library / /test/lib
  * @requires vm.gc.Z & !vm.graal.enabled
  * @summary Stress the Z
+<<<<<<< HEAD
  * @run main/othervm -Xmx384M -XX:+UseZGC TestGCOldWithZ 50 1 20 10 10000
  * @run main/othervm -Xmx256m -XX:+UseZGC TestGCOldWithZ 50 5 20 1 5000
+=======
+ * @run main/othervm -Xmx384M -XX:+UnlockExperimentalVMOptions -XX:+UseZGC gc.stress.gcold.TestGCOldWithZ 50 1 20 10 10000
+ * @run main/othervm -Xmx256m -XX:+UnlockExperimentalVMOptions -XX:+UseZGC gc.stress.gcold.TestGCOldWithZ 50 5 20 1 5000
+>>>>>>> dragonwell_official_upstream/master
  */
 public class TestGCOldWithZ {
     public static void main(String[] args) {

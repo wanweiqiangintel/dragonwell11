@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
  * Copyright (c) 2011, 2021, Oracle and/or its affiliates. All rights reserved.
+=======
+ * Copyright (c) 2011, 2019, Oracle and/or its affiliates. All rights reserved.
+>>>>>>> dragonwell_official_upstream/master
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  *
  * This code is free software; you can redistribute it and/or modify it
@@ -21,6 +25,8 @@
  * questions.
  */
 
+package gc;
+
 /**
  * @test TestFullGCCount.java
  * @bug 7072527
@@ -30,7 +36,7 @@
  * @requires !(vm.gc == "Shenandoah" & vm.opt.ExplicitGCInvokesConcurrent != false)
  * @requires vm.gc != "Z"
  * @modules java.management
- * @run main/othervm -Xlog:gc TestFullGCCount
+ * @run main/othervm -Xlog:gc gc.TestFullGCCount
  */
 
 import java.lang.management.GarbageCollectorMXBean;
