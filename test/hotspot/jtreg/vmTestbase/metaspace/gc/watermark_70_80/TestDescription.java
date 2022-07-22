@@ -29,13 +29,10 @@
  * @summary converted from VM Testbase metaspace/gc/watermark_70_80.
  * VM Testbase keywords: [nonconcurrent, no_cds]
  *
-<<<<<<< HEAD
-=======
  * @comment Don't run test in configurations where we can't reliably count number of metaspace triggered GCs
  * @requires vm.gc != null | !vm.opt.final.ClassUnloadingWithConcurrentMark
  * @requires vm.gc != "G1" | !vm.opt.final.ClassUnloadingWithConcurrentMark
  * @requires vm.gc != "ConcMarkSweep"
->>>>>>> dragonwell_official_upstream/master
  * @requires vm.gc != "Z"
  * @library /vmTestbase /test/lib
  * @run driver jdk.test.lib.FileInstaller . .

@@ -24,20 +24,14 @@
 #include "precompiled.hpp"
 #include "asm/macroAssembler.inline.hpp"
 #include "code/codeBlob.hpp"
-<<<<<<< HEAD
 #include "code/vmreg.inline.hpp"
-=======
->>>>>>> dragonwell_official_upstream/master
 #include "gc/z/zBarrier.inline.hpp"
 #include "gc/z/zBarrierSet.hpp"
 #include "gc/z/zBarrierSetAssembler.hpp"
 #include "gc/z/zBarrierSetRuntime.hpp"
 #include "memory/resourceArea.hpp"
-<<<<<<< HEAD
 #include "runtime/sharedRuntime.hpp"
-=======
 #include "runtime/stubCodeGenerator.hpp"
->>>>>>> dragonwell_official_upstream/master
 #include "utilities/macros.hpp"
 #ifdef COMPILER1
 #include "c1/c1_LIRAssembler.hpp"

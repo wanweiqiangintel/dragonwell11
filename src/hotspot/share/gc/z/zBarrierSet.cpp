@@ -53,10 +53,7 @@ ZBarrierSet::ZBarrierSet() :
     BarrierSet(make_barrier_set_assembler<ZBarrierSetAssembler>(),
                make_barrier_set_c1<ZBarrierSetC1>(),
                make_barrier_set_c2<ZBarrierSetC2>(),
-<<<<<<< HEAD
                make_barrier_set_nmethod(),
-=======
->>>>>>> dragonwell_official_upstream/master
                BarrierSet::FakeRtti(BarrierSet::ZBarrierSet)) {}
 
 ZBarrierSetAssembler* ZBarrierSet::assembler() {
