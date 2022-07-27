@@ -3369,11 +3369,7 @@ bool os::Linux::libnuma_init() {
       set_numa_node_to_cpus(CAST_TO_FN_PTR(numa_node_to_cpus_func_t,
                                            libnuma_dlsym(handle, "numa_node_to_cpus")));
       set_numa_node_to_cpus_v2(CAST_TO_FN_PTR(numa_node_to_cpus_v2_func_t,
-<<<<<<< HEAD
-                                           libnuma_v2_dlsym(handle, "numa_node_to_cpus")));
-=======
                                               libnuma_v2_dlsym(handle, "numa_node_to_cpus")));
->>>>>>> dragonwell_official_upstream/master
       set_numa_max_node(CAST_TO_FN_PTR(numa_max_node_func_t,
                                        libnuma_dlsym(handle, "numa_max_node")));
       set_numa_num_configured_nodes(CAST_TO_FN_PTR(numa_num_configured_nodes_func_t,
