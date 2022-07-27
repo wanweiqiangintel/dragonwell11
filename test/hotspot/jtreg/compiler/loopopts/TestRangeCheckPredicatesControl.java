@@ -27,13 +27,8 @@
  * @bug 8237859
  * @summary A LoadP node has a wrong control input (too early) which results in an out-of-bounds read of an object array with ZGC.
  *
-<<<<<<< HEAD
  * @run main/othervm -Xmx256m -XX:+UseZGC compiler.loopopts.TestRangeCheckPredicatesControl
- * @run main/othervm -Xmx256m -XX:+UseZGC -XX:+UnlockDiagnosticVMOptions -XX:+StressGCM compiler.loopopts.TestRangeCheckPredicatesControl
-=======
- * @run main/othervm -Xmx256m -XX:+UnlockExperimentalVMOptions -XX:+UseZGC compiler.loopopts.TestRangeCheckPredicatesControl
- * @run main/othervm -Xmx256m -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UnlockDiagnosticVMOptions -XX:+IgnoreUnrecognizedVMOptions -XX:+StressGCM compiler.loopopts.TestRangeCheckPredicatesControl
->>>>>>> dragonwell_official_upstream/master
+ * @run main/othervm -Xmx256m -XX:+UseZGC -XX:+UnlockDiagnosticVMOptions -XX:+IgnoreUnrecognizedVMOptions -XX:+StressGCM compiler.loopopts.TestRangeCheckPredicatesControl
  */
 
 package compiler.loopopts;
