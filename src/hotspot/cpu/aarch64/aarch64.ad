@@ -2552,7 +2552,6 @@ static Address mem2address(int opcode, Register base, int index, int size, int d
     }
   }
 
-<<<<<<< HEAD
   // Used for all non-volatile memory accesses.  The use of
   // $mem->opcode() to discover whether this pattern uses sign-extended
   // offsets is something of a kludge.
@@ -2562,7 +2561,8 @@ static Address mem2address(int opcode, Register base, int index, int size, int d
   {
     Address addr = mem2address(opcode, base, index, size, disp);
     (masm.*insn)(reg, addr);
-=======
+  }
+
   static void loadStore(MacroAssembler masm, mem_insn insn,
                          Register reg, int opcode,
                          Register base, int index, int size, int disp,
@@ -2595,7 +2595,6 @@ static Address mem2address(int opcode, Register base, int index, int size, int d
       assert(disp == 0, "unsupported address mode: disp = %d", disp);
       (masm.*insn)(reg, Address(base, as_Register(index), scale));
     }
->>>>>>> dragonwell_official_upstream/master
   }
 
   static void loadStore(MacroAssembler masm, mem_float_insn insn,
