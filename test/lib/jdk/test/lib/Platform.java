@@ -30,15 +30,6 @@ import java.nio.file.Paths;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-<<<<<<< HEAD
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.Files;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
-=======
->>>>>>> dragonwell_official_upstream/master
 import java.util.regex.Pattern;
 import java.security.AccessController;
 import java.security.PrivilegedAction;

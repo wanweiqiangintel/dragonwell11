@@ -34,14 +34,6 @@
 
 /**
  * @test
-<<<<<<< HEAD
- * @bug 7029048 8217340 8217216
- * @summary Ensure that the launcher defends against user settings of the
- *          LD_LIBRARY_PATH environment variable on Unixes
- * @requires os.family == "aix" | vm.musl
- * @library /test/lib
- * @compile -XDignore.symbol.file ExecutionEnvironment.java Test7029048.java
-=======
  * @bug 7029048 8217340
  * @summary Ensure that the launcher defends against user settings of the
  *          LD_LIBRARY_PATH environment variable on Unixes
@@ -59,7 +51,6 @@
  * @requires os.family == "aix" | vm.musl
  * @library /test/lib
  * @compile -XDignore.symbol.file ExecutionEnvironment.java Test7029048.java
->>>>>>> dragonwell_official_upstream/master
  * @run main/othervm -DexpandedLdLibraryPath=true Test7029048
  */
 
@@ -92,13 +83,7 @@ public class Test7029048 extends TestHelper {
     private static final File dstClientLibjvm = new File(dstClientDir, LIBJVM);
 
     static final boolean IS_EXPANDED_LD_LIBRARY_PATH =
-<<<<<<< HEAD
-        Boolean.getBoolean("expandedLdLibraryPath");
-
-    private static final Map<String, String> env = new HashMap<>();
-=======
             Boolean.getBoolean("expandedLdLibraryPath");
->>>>>>> dragonwell_official_upstream/master
 
     static String getValue(String name, List<String> in) {
         for (String x : in) {
@@ -196,20 +181,9 @@ public class Test7029048 extends TestHelper {
                     }
 
                     desc = "LD_LIBRARY_PATH should not be set (no libjvm.so)";
-<<<<<<< HEAD
 
                     if (IS_EXPANDED_LD_LIBRARY_PATH) {
                         printSkipMessage(desc);
-                    }
-                    if (TestHelper.isAIX) {
-                        System.out.println("Skipping test case \"" + desc +
-                                           "\" because the Aix launcher adds the paths in any case.");
-                    }
-                    if (IS_EXPANDED_LD_LIBRARY_PATH || TestHelper.isAIX) {
-=======
-                    if (IS_EXPANDED_LD_LIBRARY_PATH) {
-                        printSkipMessage(desc);
->>>>>>> dragonwell_official_upstream/master
                         continue;
                     }
                     break;
@@ -219,20 +193,9 @@ public class Test7029048 extends TestHelper {
                     }
 
                     desc = "LD_LIBRARY_PATH should not be set (no directory)";
-<<<<<<< HEAD
 
                     if (IS_EXPANDED_LD_LIBRARY_PATH) {
                         printSkipMessage(desc);
-                    }
-                    if (TestHelper.isAIX) {
-                        System.out.println("Skipping test case \"" + desc +
-                                           "\" because the Aix launcher adds the paths in any case.");
-                    }
-                    if (IS_EXPANDED_LD_LIBRARY_PATH || TestHelper.isAIX) {
-=======
-                    if (IS_EXPANDED_LD_LIBRARY_PATH) {
-                        printSkipMessage(desc);
->>>>>>> dragonwell_official_upstream/master
                         continue;
                     }
                     break;

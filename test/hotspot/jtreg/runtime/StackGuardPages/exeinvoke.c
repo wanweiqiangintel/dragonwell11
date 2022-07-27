@@ -294,10 +294,7 @@ int main (int argc, const char** argv) {
     printf("\nTesting JAVA_OVERFLOW\n");
 
     printf("Testing stack guard page behaviour for other thread\n");
-<<<<<<< HEAD
-=======
 
->>>>>>> dragonwell_official_upstream/master
     pthread_create(&thr, &thread_attr, run_java_overflow, NULL);
     pthread_join(thr, NULL);
 
@@ -311,11 +308,7 @@ int main (int argc, const char** argv) {
     printf("\nTesting NATIVE_OVERFLOW\n");
 
     printf("Testing stack guard page behaviour for other thread\n");
-<<<<<<< HEAD
-    pthread_create(&thr, &thread_attr, run_java_overflow, NULL);
-=======
     pthread_create(&thr, &thread_attr, run_native_overflow, NULL);
->>>>>>> dragonwell_official_upstream/master
     pthread_join(thr, NULL);
 
     printf("Testing stack guard page behaviour for initial thread\n");

@@ -26,10 +26,7 @@
  * @bug 4780570 4731671 6354700 6367077 6670965 4882974
  * @summary Checks for LD_LIBRARY_PATH and execution  on *nixes
  * @requires os.family != "windows" & !vm.musl & os.family != "aix"
-<<<<<<< HEAD
-=======
  * @library /test/lib
->>>>>>> dragonwell_official_upstream/master
  * @modules jdk.compiler
  *          jdk.zipfs
  * @compile -XDignore.symbol.file ExecutionEnvironment.java
@@ -100,11 +97,7 @@ public class ExecutionEnvironment extends TestHelper {
     static final File testJarFile = new File("EcoFriendly.jar");
 
     static final boolean IS_EXPANDED_LD_LIBRARY_PATH =
-<<<<<<< HEAD
-        Boolean.getBoolean("expandedLdLibraryPath");
-=======
             Boolean.getBoolean("expandedLdLibraryPath");
->>>>>>> dragonwell_official_upstream/master
 
     public ExecutionEnvironment() {
         createTestJar();

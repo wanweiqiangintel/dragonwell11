@@ -314,10 +314,7 @@ AC_DEFUN([PLATFORM_EXTRACT_TARGET_AND_BUILD],
     AC_MSG_CHECKING([openjdk-build C library])
     AC_MSG_RESULT([$OPENJDK_BUILD_LIBC])
   fi
-<<<<<<< HEAD
-=======
 
->>>>>>> dragonwell_official_upstream/master
   # Convert the autoconf OS/CPU value to our own data, into the VAR_OS/CPU/LIBC variables.
   PLATFORM_EXTRACT_VARS_FROM_OS($host_os)
   PLATFORM_EXTRACT_VARS_FROM_CPU($host_cpu)
@@ -500,18 +497,12 @@ AC_DEFUN([PLATFORM_SETUP_LEGACY_VARS_HELPER],
   else
     OPENJDK_$1_CPU_BUNDLE="$OPENJDK_$1_CPU"
   fi
-<<<<<<< HEAD
-=======
 
->>>>>>> dragonwell_official_upstream/master
   OPENJDK_$1_LIBC_BUNDLE=""
   if test "x$OPENJDK_$1_LIBC" = "xmusl"; then
     OPENJDK_$1_LIBC_BUNDLE="-$OPENJDK_$1_LIBC"
   fi
-<<<<<<< HEAD
-=======
 
->>>>>>> dragonwell_official_upstream/master
   OPENJDK_$1_BUNDLE_PLATFORM="${OPENJDK_$1_OS_BUNDLE}-${OPENJDK_$1_CPU_BUNDLE}${OPENJDK_$1_LIBC_BUNDLE}"
   AC_SUBST(OPENJDK_$1_BUNDLE_PLATFORM)
 

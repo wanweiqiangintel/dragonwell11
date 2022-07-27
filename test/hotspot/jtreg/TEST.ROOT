@@ -71,10 +71,7 @@ requires.properties= \
     vm.compiler1.enabled \
     vm.compiler2.enabled \
     vm.musl \
-<<<<<<< HEAD
-=======
     vm.flagless \
->>>>>>> dragonwell_official_upstream/master
     docker.support
 
 # Minimum jtreg version
