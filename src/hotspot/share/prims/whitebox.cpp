@@ -267,13 +267,6 @@ WB_ENTRY(void, WB_ReadFromNoaccessArea(JNIEnv* env, jobject o))
                 *(vs.low_boundary() - rhs.noaccess_prefix() / 2 ));
 WB_END
 
-WB_ENTRY(jstring, WB_GetLibcName(JNIEnv* env, jobject o))
-  ThreadToNativeFromVM ttn(thread);
-  jstring info_string = env->NewStringUTF(XSTR(LIBC));
-  CHECK_JNI_EXCEPTION_(env, NULL);
-  return info_string;
-WB_END
-
 static jint wb_stress_virtual_space_resize(size_t reserved_space_size,
                                            size_t magnitude, size_t iterations) {
   size_t granularity = os::vm_allocation_granularity();
