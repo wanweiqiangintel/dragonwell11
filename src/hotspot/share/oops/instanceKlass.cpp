@@ -4017,21 +4017,6 @@ jint InstanceKlass::get_cached_class_file_len() {
 unsigned char * InstanceKlass::get_cached_class_file_bytes() {
   return VM_RedefineClasses::get_cached_class_file_bytes(_cached_class_file);
 }
-
-#if INCLUDE_CDS
-JvmtiCachedClassFileData* InstanceKlass::get_archived_class_data() {
-  if (DumpSharedSpaces) {
-    return _cached_class_file;
-  } else {
-    assert(this->is_shared(), "class should be shared");
-    if (MetaspaceShared::is_in_shared_metaspace(_cached_class_file)) {
-      return _cached_class_file;
-    } else {
-      return NULL;
-    }
-  }
-}
-#endif
 #endif
 
 bool InstanceKlass::is_reentrant_initialization(Thread *thread)  {
